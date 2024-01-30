@@ -10,8 +10,8 @@ license: MIT
 title: 'tracetheme: A ''ggplot2'' Theme and Scale Using ''Epiverse-TRACE'' Visual
   Style'
 version: 0.0.1
-abstract: A 'ggplot2' Theme and Scale Using 'Epiverse-TRACE' Visual Style, colour
-  scheme,
+abstract: A 'ggplot2' theme and scale using 'Epiverse-TRACE' visual style, colour
+  scheme, and visualisation guidelines.
 authors:
 - name: The Epiverse-TRACE team
   email: hugo@data.org
@@ -55,6 +55,18 @@ references:
   - family-names: Dunnington
     given-names: Dewey
     orcid: https://orcid.org/0000-0002-9415-4582
+  year: '2024'
+- type: software
+  title: ggraph
+  abstract: 'ggraph: An Implementation of Grammar of Graphics for Graphs and Networks'
+  notes: Suggests
+  url: https://ggraph.data-imaginist.com
+  repository: https://CRAN.R-project.org/package=ggraph
+  authors:
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomasp85@gmail.com
+    orcid: https://orcid.org/0000-0002-5147-4711
   year: '2024'
 - type: software
   title: knitr
@@ -126,6 +138,18 @@ references:
     orcid: https://orcid.org/0000-0003-3925-190X
   year: '2024'
 - type: software
+  title: sf
+  abstract: 'sf: Simple Features for R'
+  notes: Suggests
+  url: https://r-spatial.github.io/sf/
+  repository: https://CRAN.R-project.org/package=sf
+  authors:
+  - family-names: Pebesma
+    given-names: Edzer
+    email: edzer.pebesma@uni-muenster.de
+    orcid: https://orcid.org/0000-0001-8049-7069
+  year: '2024'
+- type: software
   title: spelling
   abstract: 'spelling: Tools for Spell Checking in R'
   notes: Suggests
@@ -152,3 +176,15 @@ references:
     email: hadley@posit.co
   year: '2024'
   version: '>= 3.0.0'
+- type: software
+  title: tidygraph
+  abstract: 'tidygraph: A Tidy API for Graph Manipulation'
+  notes: Suggests
+  url: https://tidygraph.data-imaginist.com
+  repository: https://CRAN.R-project.org/package=tidygraph
+  authors:
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomasp85@gmail.com
+    orcid: https://orcid.org/0000-0002-5147-4711
+  year: '2024'
