@@ -17,7 +17,6 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(tracetheme)
 library(ggplot2)
-
 ```
 
 The examples below are taken from [ggplot2 documentation](https://ggplot2.tidyverse.org/) and are intended to demonstrate the effect of the `theme_trace()` and `scale_trace()` functions.
@@ -25,7 +24,7 @@ The examples below are taken from [ggplot2 documentation](https://ggplot2.tidyve
 ## Line graphs/time series
 
 ```{r}
-ggplot(economics, aes(date, unemploy)) + 
+ggplot(economics, aes(date, unemploy)) +
   geom_line() +
   theme_trace()
 ```
@@ -33,7 +32,7 @@ ggplot(economics, aes(date, unemploy)) +
 ## Scatter plots
 
 ```{r}
-ggplot(mtcars, aes(wt, mpg)) + 
+ggplot(mtcars, aes(wt, mpg)) +
   geom_point() +
   theme_trace()
 ```
@@ -41,7 +40,7 @@ ggplot(mtcars, aes(wt, mpg)) +
 ## Bar / column charts
 
 ```{r}
-ggplot(mpg, aes(class))+
+ggplot(mpg, aes(class)) +
   geom_bar() +
   theme_trace()
 ```
@@ -63,8 +62,8 @@ states_map <- map_data("state")
 ggplot(crimes_long, aes(map_id = state)) +
   geom_map(aes(fill = value), map = states_map) +
   coord_sf(
-   crs = 5070, default_crs = 4326,
-   xlim = c(-125, -70), ylim = c(25, 52)
+    crs = 5070, default_crs = 4326,
+    xlim = c(-125, -70), ylim = c(25, 52)
   ) +
   facet_wrap(~variable) +
   theme_trace()
@@ -97,11 +96,26 @@ ggplot(faithful, aes(x = eruptions, y = waiting)) +
 ```
 
 ```{r}
-ggplot(diamonds, aes(x, y))+ 
+ggplot(diamonds, aes(x, y)) +
   geom_bin_2d() +
   theme_trace()
 ```
 
 ## Networks
+
+This example is pulled from ggraph documentation
+
+```{r}
+library(ggraph)
+library(tidygraph)
+
+set_graph_style(plot_margin = margin(1, 1, 1, 1))
+graph <- as_tbl_graph(highschool)
+
+# Not specifying the layout - defaults to "auto"
+ggraph(graph) +
+  geom_edge_link(aes(colour = factor(year))) +
+  geom_node_point()
+```
 
 ## Concept maps / flowcharts

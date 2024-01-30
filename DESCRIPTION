@@ -11,12 +11,14 @@ License: MIT + file LICENSE
 Imports: 
     ggplot2
 Suggests: 
+    ggraph,
     knitr,
     maps,
     rmarkdown,
     sf,
     spelling,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    tidygraph
 VignetteBuilder: 
     knitr
 Config/Needs/website: epiverse-trace/epiversetheme
