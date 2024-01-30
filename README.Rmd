@@ -27,10 +27,7 @@ knitr::opts_chunk$set(
 [![lifecycle-concept](https://raw.githubusercontent.com/reconverse/reconverse.github.io/master/images/badge-concept.svg)](https://www.reconverse.org/lifecycle.html#concept) 
 <!-- badges: end -->
 
-{{ packagename }} provides functions to ....
-
-<!-- This sentence is optional and can be removed -->
-{{ packagename }} is developed at the [CENTER|similar](url) at the [UNIVERSITY|similar](url) as part of the [Epiverse-TRACE program](https://data.org/initiatives/epiverse/).
+{{ packagename }} provides a ggplot theme and scale for Epiverse-TRACE plots.
 
 ## Installation
 
@@ -41,25 +38,6 @@ You can install the development version of {{ packagename }} from
 # install.packages("pak")
 pak::pak("{{ gh_repo }}")
 ```
-
-## Example
-
-These examples illustrate some of the current functionalities
-
-
-## Development
-
-### Lifecycle
-
-This package is currently a *concept*, as defined by the [RECON software
-lifecycle](https://www.reconverse.org/lifecycle.html). This means that essential
-features and mechanisms are still being developed, and the package is not ready
-for use outside of the development team.
-
-
-### Contributions
-
-Contributions are welcome via [pull requests](https://github.com/{{ gh_repo }}/pulls).
 
 ### Code of Conduct
 
