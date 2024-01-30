@@ -4,41 +4,58 @@
 # -----------------------------------------------------------
  
 cff-version: 1.2.0
-message: 'To cite package "packagetemplate" in publications use:'
+message: 'To cite package "tracetheme" in publications use:'
 type: software
 license: MIT
-title: 'packagetemplate: Your Package Title in Titlecase'
+title: 'tracetheme: A ''ggplot2'' Theme and Scale Using ''Epiverse-TRACE'' Visual
+  Style'
 version: 0.0.1
-abstract: 'Your package description. It must end with a period (".") and include relevant
-  bibliographical references if applicable, using the following format: Author et
-  al. (2023) <doi:10.5281/zenodo.6619350>.'
+abstract: A 'ggplot2' Theme and Scale Using 'Epiverse-TRACE' Visual Style, colour
+  scheme,
 authors:
-- family-names: Azam
-  given-names: James M.
-  email: james.azam@lshtm.ac.uk
-  orcid: https://orcid.org/0000-0001-5782-7330
-- family-names: Gruson
-  given-names: Hugo
+- name: The Epiverse-TRACE team
   email: hugo@data.org
   orcid: https://orcid.org/0000-0002-4094-1476
-- family-names: Gupte
-  given-names: Pratik
-  email: pratik.gupte@lshtm.ac.uk
-  orcid: https://orcid.org/0000-0001-5294-7819
-- family-names: Lambert
-  given-names: Joshua W.
-  email: joshua.lambert@lshtm.ac.uk
-  orcid: https://orcid.org/0000-0001-5218-3046
-- family-names: Mané
-  given-names: Karim
-  email: karim.mane@lshtm.ac.uk
-  orcid: https://orcid.org/0000-0002-9892-2999
 contact:
-- family-names: Gruson
-  given-names: Hugo
+- name: The Epiverse-TRACE team
   email: hugo@data.org
   orcid: https://orcid.org/0000-0002-4094-1476
 references:
+- type: software
+  title: ggplot2
+  abstract: 'ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics'
+  notes: Imports
+  url: https://ggplot2.tidyverse.org
+  repository: https://CRAN.R-project.org/package=ggplot2
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+    orcid: https://orcid.org/0000-0003-4757-117X
+  - family-names: Chang
+    given-names: Winston
+    orcid: https://orcid.org/0000-0002-1576-2126
+  - family-names: Henry
+    given-names: Lionel
+  - family-names: Pedersen
+    given-names: Thomas Lin
+    email: thomas.pedersen@posit.co
+    orcid: https://orcid.org/0000-0002-5147-4711
+  - family-names: Takahashi
+    given-names: Kohske
+  - family-names: Wilke
+    given-names: Claus
+    orcid: https://orcid.org/0000-0002-7470-9261
+  - family-names: Woo
+    given-names: Kara
+    orcid: https://orcid.org/0000-0002-5125-4188
+  - family-names: Yutani
+    given-names: Hiroaki
+    orcid: https://orcid.org/0000-0002-3385-7233
+  - family-names: Dunnington
+    given-names: Dewey
+    orcid: https://orcid.org/0000-0002-9415-4582
+  year: '2024'
 - type: software
   title: knitr
   abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
@@ -50,6 +67,20 @@ references:
     given-names: Yihui
     email: xie@yihui.name
     orcid: https://orcid.org/0000-0003-0645-5666
+  year: '2024'
+- type: software
+  title: maps
+  abstract: 'maps: Draw Geographical Maps'
+  notes: Suggests
+  repository: https://CRAN.R-project.org/package=maps
+  authors:
+  - family-names: Becker
+    given-names: Original S code by Richard A.
+  - family-names: Minka
+    given-names: Allan R. Wilks. R version by Ray Brownrigg. Enhancements by Thomas
+      P
+  - family-names: Deckmyn.
+    given-names: Alex
   year: '2024'
 - type: software
   title: rmarkdown
