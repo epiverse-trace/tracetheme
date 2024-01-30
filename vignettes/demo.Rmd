@@ -1,0 +1,107 @@
+---
+title: "Epiverse-TRACE ggplot2 theme and scale demo"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Epiverse-TRACE ggplot2 theme and scale demo}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(tracetheme)
+library(ggplot2)
+
+```
+
+The examples below are taken from [ggplot2 documentation](https://ggplot2.tidyverse.org/) and are intended to demonstrate the effect of the `theme_trace()` and `scale_trace()` functions.
+
+## Line graphs/time series
+
+```{r}
+ggplot(economics, aes(date, unemploy)) + 
+  geom_line() +
+  theme_trace()
+```
+
+## Scatter plots
+
+```{r}
+ggplot(mtcars, aes(wt, mpg)) + 
+  geom_point() +
+  theme_trace()
+```
+
+## Bar / column charts
+
+```{r}
+ggplot(mpg, aes(class))+
+  geom_bar() +
+  theme_trace()
+```
+
+## Maps
+
+```{r}
+library(maps)
+crimes <- data.frame(state = tolower(rownames(USArrests)), USArrests)
+
+# Equivalent to crimes %>% tidyr::pivot_longer(Murder:Rape)
+vars <- lapply(names(crimes)[-1], function(j) {
+  data.frame(state = crimes$state, variable = j, value = crimes[[j]])
+})
+crimes_long <- do.call("rbind", vars)
+
+states_map <- map_data("state")
+
+ggplot(crimes_long, aes(map_id = state)) +
+  geom_map(aes(fill = value), map = states_map) +
+  coord_sf(
+   crs = 5070, default_crs = 4326,
+   xlim = c(-125, -70), ylim = c(25, 52)
+  ) +
+  facet_wrap(~variable) +
+  theme_trace()
+```
+
+## Distribution plots (parametric and non-parametric) 
+
+```{r}
+ggplot() +
+  geom_function(fun = dnorm) +
+  xlim(-5, 5) +
+  theme_trace()
+```
+
+## Densities
+
+```{r}
+ggplot(diamonds, aes(carat)) +
+  geom_density() +
+  theme_trace()
+```
+
+## Heatmaps
+
+```{r}
+ggplot(faithful, aes(x = eruptions, y = waiting)) +
+  geom_point() +
+  geom_density_2d_filled(alpha = 0.5) +
+  theme_trace()
+```
+
+```{r}
+ggplot(diamonds, aes(x, y))+ 
+  geom_bin_2d() +
+  theme_trace()
+```
+
+## Networks
+
+## Concept maps / flowcharts
