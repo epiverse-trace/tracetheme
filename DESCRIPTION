@@ -5,8 +5,8 @@ Authors@R: c(
     person("The Epiverse-TRACE team", , , "hugo@data.org", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-4094-1476"))
   )
-Description: A 'ggplot2' Theme and Scale Using 'Epiverse-TRACE' Visual Style, 
-    colour scheme, 
+Description: A 'ggplot2' theme and scale using 'Epiverse-TRACE' visual style, 
+    colour scheme, and visualisation guidelines.
 License: MIT + file LICENSE
 Imports: 
     ggplot2
