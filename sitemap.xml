@@ -10,6 +10,9 @@
     <loc>/LICENSE.html</loc>
   </url>
   <url>
+    <loc>/articles/demo.html</loc>
+  </url>
+  <url>
     <loc>/articles/design-principles.html</loc>
   </url>
   <url>
@@ -28,6 +31,9 @@
     <loc>/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/packagetemplate-package.html</loc>
+    <loc>/reference/theme_trace.html</loc>
+  </url>
+  <url>
+    <loc>/reference/tracetheme-package.html</loc>
   </url>
 </urlset>
