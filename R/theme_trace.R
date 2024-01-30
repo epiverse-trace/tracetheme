@@ -12,7 +12,7 @@ theme_custom <- function(...) {
 
 }
 
-#' A custom \pkg{ggplot2} theme for \pkg{episoap} reports
+#' A custom \pkg{ggplot2} theme for Epiverse-TRACE packages and projects
 #'
 #' @returns
 #' A \pkg{ggplot2} [theme] object

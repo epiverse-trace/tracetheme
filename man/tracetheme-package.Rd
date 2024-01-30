@@ -6,7 +6,7 @@
 \alias{tracetheme-package}
 \title{tracetheme: A 'ggplot2' Theme and Scale Using 'Epiverse-TRACE' Visual Style}
 \description{
-A 'ggplot2' Theme and Scale Using 'Epiverse-TRACE' Visual Style, colour scheme,
+A 'ggplot2' theme and scale using 'Epiverse-TRACE' visual style, colour scheme, and visualisation guidelines.
 }
 \author{
 \strong{Maintainer}: The Epiverse-TRACE team \email{hugo@data.org} (\href{https://orcid.org/0000-0002-4094-1476}{ORCID})

@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_trace.R
 \name{theme_trace}
 \alias{theme_trace}
-\title{A custom \pkg{ggplot2} theme for \pkg{episoap} reports}
+\title{A custom \pkg{ggplot2} theme for Epiverse-TRACE packages and projects}
 \usage{
 theme_trace()
 }
@@ -10,7 +10,7 @@ theme_trace()
 A \pkg{ggplot2} \link{theme} object
 }
 \description{
-A custom \pkg{ggplot2} theme for \pkg{episoap} reports
+A custom \pkg{ggplot2} theme for Epiverse-TRACE packages and projects
 }
 \examples{
 library(ggplot2)
