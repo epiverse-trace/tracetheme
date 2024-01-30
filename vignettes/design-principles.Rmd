@@ -33,4 +33,4 @@ This package should work with plots provided by:
 
 The only hard dependency of this package should be ggplot2.
 
-We anticipate using other dependencies during the development of this package, such as the colourspace package. But these development packages don't need to be added to the `DESCRIPTION` file.
+We anticipate using other dependencies during the development of this package, such as the colorspace package. But these development packages don't need to be added to the `DESCRIPTION` file.

@@ -4,6 +4,7 @@ Epiverse
 Heatmaps
 ORCID
 codecov
+colorspace
 com
 ggplot
 ggraph
@@ -12,7 +13,5 @@ github
 io
 lifecycle
 packagename
-packagetemplate
 svg
-tidyverse
 yaml
