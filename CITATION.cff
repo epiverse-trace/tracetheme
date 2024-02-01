@@ -188,3 +188,14 @@ references:
     email: thomasp85@gmail.com
     orcid: https://orcid.org/0000-0002-5147-4711
   year: '2024'
+- type: software
+  title: extrafont
+  abstract: 'extrafont: Tools for Using Fonts'
+  notes: Suggests
+  url: https://github.com/wch/extrafont
+  repository: https://CRAN.R-project.org/package=extrafont
+  authors:
+  - family-names: Chang
+    given-names: Winston
+    email: winston@stdout.org
+  year: '2024'
