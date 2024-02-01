@@ -18,7 +18,8 @@ Suggests:
     sf,
     spelling,
     testthat (>= 3.0.0),
-    tidygraph
+    tidygraph,
+    extrafont
 VignetteBuilder: 
     knitr
 Config/Needs/website: epiverse-trace/epiversetheme

@@ -1,14 +1,21 @@
 #' @importFrom ggplot2 %+replace%
 #' @importFrom ggplot2 theme theme_grey element_rect element_text element_line
+#' @import extrafont
 theme_custom <- function(...) {
 
   # https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html
 
   custom_grey <- "#505B5B"
   green_grey <- "#5E7E80"
-
   theme_grey(...) %+replace%
-    theme()
+    theme(
+      panel.background = element_rect(fill = "white"),
+      plot.title = element_text(family = "Courier", size = 15, face = "bold"),
+      axis.title.x  = element_text(family = "Courier", size = 10, face = "bold"),
+      axis.title.y  = element_text(family = "Courier", size = 10, face = "bold", angle = 90),
+      axis.text.x = element_text(family = "Courier", size = 8, face = "plain", angle = 60),
+      axis.text.y = element_text(family = "Courier", size = 8, face = "plain", angle = 60)
+    )
 
 }
 
@@ -27,7 +34,6 @@ theme_custom <- function(...) {
 #'
 #' @export
 theme_trace <- function() {
-
   theme_custom()
 
 }
