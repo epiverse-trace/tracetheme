@@ -29,6 +29,34 @@ This package should work with plots provided by:
 - ggplot2
 - ggraph
 
+## Design decisions
+
+### Alignment with Epiverse-TRACE web theme
+
+Epiverse-TRACE already has a clear visual identity for its web resources, via the [pkgdown custom theme](https://epiverse-trace.github.io/epiversetheme), the [varnish fork to customize the look of online training materials](https://epiverse-trace.github.io/varnish), and the [custom theme for the quarto website](https://github.com/epiverse-trace/epiverse-trace.github.io/blob/0d70e09531c422648e0a1d46f7ca64c45def78a2/custom.scss).
+
+The custom ggplot2 theme and scale provided here should roughly align with this existing visual identity.
+
+In practice, this means:
+
+- The default font should be [`DM Sans`](https://fonts.google.com/specimen/DM+Sans), or [`Roboto Mono`](https://fonts.google.com/specimen/Roboto+Mono) for code.
+- The colour scale should use one or more of the Epiverse-TRACE brand colours:
+  - [Indigo](https://color-hex.org/color/071e2d)
+  - [Deep Coral](https://color-hex.org/color/f04a4c)
+  - [Ether Blue](https://color-hex.org/color/106ba0)
+  - [Aqua](https://color-hex.org/color/10bed2)
+  - [Olive](https://color-hex.org/color/aec800)
+  - [Lime](https://color-hex.org/color/deff00)
+  - [Cool Gray](https://color-hex.org/color/88888)
+  - [Warm Gray](https://color-hex.org/color/ebe6e0)
+
+### Accessibility requirements
+
+The package should aim to be accessible to all users, including those with visual impairments. As such:
+
+- The default font size and weight, and the default line thickness, should be have reasonably high values
+- The default colour scale should be accessible for colourblind users, and for non-colour printing.
+
 ## Dependencies
 
 The only hard dependency of this package should be ggplot2.
