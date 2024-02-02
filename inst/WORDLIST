@@ -5,6 +5,7 @@ Heatmaps
 ORCID
 codecov
 colorspace
+colourblind
 com
 ggplot
 ggraph
@@ -13,5 +14,6 @@ github
 io
 lifecycle
 packagename
+pkgdown
 svg
 yaml
