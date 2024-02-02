@@ -17,6 +17,9 @@ knitr::opts_chunk$set(
 ```{r setup}
 devtools::load_all()#library(tracetheme)
 library(ggplot2)
+library(outbreaks)
+library(incidence2)
+library(linelist)
 ```
 
 The examples below are taken from [ggplot2 documentation](https://ggplot2.tidyverse.org/) and are intended to demonstrate the effect of the `theme_trace()` and `scale_trace()` functions.
@@ -24,28 +27,33 @@ The examples below are taken from [ggplot2 documentation](https://ggplot2.tidyve
 ## Line graphs/time series
 
 ```{r}
-ggplot(economics, aes(date, unemploy)) +
-  geom_line() +
+df <- incidence2::incidence(outbreaks::ebola_sim_clean$linelist, date_index = "date_of_onset", interval = 7)
+ggplot(df, aes(date_index, count)) +
+  geom_line() + 
+  labs(x = "Date", y = "Confirmed cases") +
   theme_trace()
 ```
 
 ## Scatter plots
 
 ```{r}
-ggplot(mtcars, aes(wt, mpg)) +
+ggplot(df, aes(date_index, count)) +
   geom_point() +
+  labs(x = "Date", y = "Confirmed cases") +
   theme_trace()
 ```
 
 ## Bar / column charts
 
 ```{r}
-ggplot(mpg, aes(class)) +
+isoweek_df <- base::transform(outbreaks::ebola_sim_clean$linelist, date_of_onset = as_isoweek(date_of_onset)) 
+ggplot(isoweek_df, aes(date_of_onset)) +
   geom_bar() +
+  labs(x = "Date", y = "Confirmed cases") +
   theme_trace()
 ```
 
-## Maps
+
 
 ```{r}
 library(maps)
@@ -81,8 +89,9 @@ ggplot() +
 ## Densities
 
 ```{r}
-ggplot(diamonds, aes(carat)) +
+ggplot(isoweek_df, aes(date_of_onset)) +
   geom_density() +
+   labs(x = "Date", y = "Confirmed cases") +
   theme_trace()
 ```
 

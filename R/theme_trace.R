@@ -13,8 +13,10 @@ theme_custom <- function(...) {
       plot.title = element_text(family = "Courier", size = 15, face = "bold"),
       axis.title.x  = element_text(family = "Courier", size = 10, face = "bold"),
       axis.title.y  = element_text(family = "Courier", size = 10, face = "bold", angle = 90),
-      axis.text.x = element_text(family = "Courier", size = 8, face = "plain", angle = 60),
-      axis.text.y = element_text(family = "Courier", size = 8, face = "plain", angle = 60)
+      axis.text.x = element_text(family = "Courier", size = 8 , angle = 60),
+      axis.text.y = element_text(family = "Courier", size = 8, angle = 0),
+      panel.grid.major = element_line(color = "black", size = 0.05),
+      panel.grid.minor = element_line(color = "black", size = 0.05),
     )
 
 }
