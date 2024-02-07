@@ -1,0 +1,44 @@
+---
+title: "Epiverse-TRACE figures"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Epiverse-TRACE figures}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+<!--
+This article is not rendered by default due to the computation time and the
+size of the resulting HTML document.
+The code here may however prove useful to verify locally that all Epiverse-TRACE 
+figures are covered by the theme.
+-->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r, results='asis'}
+df <- jsonlite::fromJSON("https://epiverse-connect.r-universe.dev/api/packages")
+
+articles <- df |>
+  dplyr::select(Package, `_vignettes`) |>
+  tidyr::unnest(`_vignettes`) |>
+  dplyr::select(pkg = Package, vignette = filename) |>
+  purrr::transpose() |>
+  purrr::map(~ xml2::read_html(
+    glue::glue(
+      "https://epiverse-connect.r-universe.dev/{.x$pkg}/doc/{.x$vignette}"
+    )
+  ))
+
+imgs <- articles |>
+  purrr::map(~ xml2::xml_text(xml2::xml_find_all(.x, "//img/@src"))) |>
+  purrr::list_c()
+
+imgs |>
+  purrr::walk(\(uri) cat(sprintf("<img src=\"%s\" />", uri), sep = "\n"))
+```
