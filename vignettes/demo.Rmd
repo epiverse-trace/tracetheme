@@ -30,7 +30,7 @@ The examples below are taken from [ggplot2 documentation](https://ggplot2.tidyve
 df <- incidence2::incidence(outbreaks::ebola_sim_clean$linelist, date_index = "date_of_onset", interval = 7)
 ggplot(df, aes(date_index, count)) +
   geom_line() + 
-  labs(x = "Date", y = "Confirmed cases") +
+  labs(x = "Date", y = "Confirmed cases", title = "Ebola confirmed cases") +
   theme_trace()
 ```
 
@@ -39,7 +39,7 @@ ggplot(df, aes(date_index, count)) +
 ```{r}
 ggplot(df, aes(date_index, count)) +
   geom_point() +
-  labs(x = "Date", y = "Confirmed cases") +
+  labs(x = "Date", y = "Confirmed cases", title = "Ebola confirmed cases") +
   theme_trace()
 ```
 
@@ -49,7 +49,7 @@ ggplot(df, aes(date_index, count)) +
 isoweek_df <- base::transform(outbreaks::ebola_sim_clean$linelist, date_of_onset = as_isoweek(date_of_onset)) 
 ggplot(isoweek_df, aes(date_of_onset)) +
   geom_bar() +
-  labs(x = "Date", y = "Confirmed cases") +
+  labs(x = "Date", y = "Confirmed cases", title = "Ebola confirmed cases") +
   theme_trace()
 ```
 

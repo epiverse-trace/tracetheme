@@ -5,16 +5,17 @@ theme_custom <- function(...) {
 
   # https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html
 
+  trace_font <- "DM Sans"
   custom_grey <- "#505B5B"
   green_grey <- "#5E7E80"
   theme_grey(...) %+replace%
     theme(
       panel.background = element_rect(fill = "white"),
-      plot.title = element_text(family = "Courier", size = 15, face = "bold"),
-      axis.title.x  = element_text(family = "Courier", size = 10, face = "bold"),
-      axis.title.y  = element_text(family = "Courier", size = 10, face = "bold", angle = 90),
-      axis.text.x = element_text(family = "Courier", size = 8 , angle = 60),
-      axis.text.y = element_text(family = "Courier", size = 8, angle = 0),
+      plot.title = element_text(family = trace_font, size = 15, face = "bold"),
+      axis.title.x  = element_text(family = trace_font, size = 10, face = "bold"),
+      axis.title.y  = element_text(family = trace_font, size = 10, face = "bold", angle = 90),
+      axis.text.x = element_text(family = trace_font, size = 8 , angle = 60),
+      axis.text.y = element_text(family = trace_font, size = 8, angle = 0),
       panel.grid.major = element_line(color = "black", size = 0.05),
       panel.grid.minor = element_line(color = "black", size = 0.05),
     )
