@@ -111,6 +111,52 @@ functions provided out of the box by ggplot2.</p>
 </ul>
 </div>
 <div class="section level2">
+<h2 id="design-decisions">Design decisions<a class="anchor" aria-label="anchor" href="#design-decisions"></a>
+</h2>
+<div class="section level3">
+<h3 id="alignment-with-epiverse-trace-web-theme">Alignment with Epiverse-TRACE web theme<a class="anchor" aria-label="anchor" href="#alignment-with-epiverse-trace-web-theme"></a>
+</h3>
+<p>Epiverse-TRACE already has a clear visual identity for its web
+resources, via the <a href="https://epiverse-trace.github.io/epiversetheme" class="external-link">pkgdown custom
+theme</a>, the <a href="https://epiverse-trace.github.io/varnish" class="external-link">varnish fork to
+customize the look of online training materials</a>, and the <a href="https://github.com/epiverse-trace/epiverse-trace.github.io/blob/0d70e09531c422648e0a1d46f7ca64c45def78a2/custom.scss" class="external-link">custom
+theme for the quarto website</a>.</p>
+<p>The custom ggplot2 theme and scale provided here should roughly align
+with this existing visual identity.</p>
+<p>In practice, this means:</p>
+<ul>
+<li>The default font should be <a href="https://fonts.google.com/specimen/DM+Sans" class="external-link"><code>DM Sans</code></a>,
+or <a href="https://fonts.google.com/specimen/Roboto+Mono" class="external-link"><code>Roboto Mono</code></a>
+for code.</li>
+<li>The colour scale should use one or more of the Epiverse-TRACE brand
+colours:
+<ul>
+<li><a href="https://color-hex.org/color/071e2d" class="external-link">Indigo</a></li>
+<li><a href="https://color-hex.org/color/f04a4c" class="external-link">Deep Coral</a></li>
+<li><a href="https://color-hex.org/color/106ba0" class="external-link">Ether Blue</a></li>
+<li><a href="https://color-hex.org/color/10bed2" class="external-link">Aqua</a></li>
+<li><a href="https://color-hex.org/color/aec800" class="external-link">Olive</a></li>
+<li><a href="https://color-hex.org/color/deff00" class="external-link">Lime</a></li>
+<li><a href="https://color-hex.org/color/88888" class="external-link">Cool Gray</a></li>
+<li><a href="https://color-hex.org/color/ebe6e0" class="external-link">Warm Gray</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="accessibility-requirements">Accessibility requirements<a class="anchor" aria-label="anchor" href="#accessibility-requirements"></a>
+</h3>
+<p>The package should aim to be accessible to all users, including those
+with visual impairments. As such:</p>
+<ul>
+<li>The default font size and weight, and the default line thickness,
+should be have reasonably high values</li>
+<li>The default colour scale should be accessible for colourblind users,
+and for non-colour printing.</li>
+</ul>
+</div>
+</div>
+<div class="section level2">
 <h2 id="dependencies">Dependencies<a class="anchor" aria-label="anchor" href="#dependencies"></a>
 </h2>
 <p>The only hard dependency of this package should be ggplot2.</p>
