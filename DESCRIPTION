@@ -9,7 +9,7 @@ Description: A 'ggplot2' theme and scale using 'Epiverse-TRACE' visual style,
     colour scheme, and visualisation guidelines.
 License: MIT + file LICENSE
 Depends: 
-    R (>= 2.10)
+    R (>= 3.6.0)
 Imports: 
     ggplot2
 Suggests: 
