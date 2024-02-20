@@ -10,7 +10,9 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  fig.height = tracetheme::vignette_dim$vig_height,
+  fig.width = tracetheme::vignette_dim$vig_width
 )
 ```
 
