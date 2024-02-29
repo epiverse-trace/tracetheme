@@ -11,3 +11,5 @@
 ^CITATION\.cff$
 ^tools$
 ^data-raw$
+^doc$
+^Meta$
