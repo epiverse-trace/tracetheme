@@ -31,9 +31,15 @@
     <loc>/reference/index.html</loc>
   </url>
   <url>
+    <loc>/reference/slide_dim.html</loc>
+  </url>
+  <url>
     <loc>/reference/theme_trace.html</loc>
   </url>
   <url>
     <loc>/reference/tracetheme-package.html</loc>
+  </url>
+  <url>
+    <loc>/reference/vignette_dim.html</loc>
   </url>
 </urlset>
