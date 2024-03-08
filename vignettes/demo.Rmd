@@ -19,6 +19,7 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(tracetheme)
 library(ggplot2)
+theme_set(theme_trace())
 ```
 
 The examples below are taken from [ggplot2 documentation](https://ggplot2.tidyverse.org/) and are intended to demonstrate the effect of the `theme_trace()` and `scale_trace()` functions.
@@ -27,24 +28,21 @@ The examples below are taken from [ggplot2 documentation](https://ggplot2.tidyve
 
 ```{r}
 ggplot(economics, aes(date, unemploy)) +
-  geom_line() +
-  theme_trace()
+  geom_line()
 ```
 
 ## Scatter plots
 
 ```{r}
 ggplot(mtcars, aes(wt, mpg)) +
-  geom_point() +
-  theme_trace()
+  geom_point()
 ```
 
 ## Bar / column charts
 
 ```{r}
 ggplot(mpg, aes(class)) +
-  geom_bar() +
-  theme_trace()
+  geom_bar()
 ```
 
 ## Maps
@@ -66,8 +64,7 @@ ggplot(crimes_long, aes(map_id = state)) +
     crs = 5070, default_crs = 4326,
     xlim = c(-125, -70), ylim = c(25, 52)
   ) +
-  facet_wrap(~variable) +
-  theme_trace()
+  facet_wrap(~variable)
 ```
 
 ## Distribution plots (parametric and non-parametric) 
@@ -75,16 +72,14 @@ ggplot(crimes_long, aes(map_id = state)) +
 ```{r}
 ggplot() +
   geom_function(fun = dnorm) +
-  xlim(-5, 5) +
-  theme_trace()
+  xlim(-5, 5)
 ```
 
 ## Densities
 
 ```{r}
 ggplot(diamonds, aes(carat)) +
-  geom_density() +
-  theme_trace()
+  geom_density()
 ```
 
 ## Heatmaps
@@ -92,14 +87,12 @@ ggplot(diamonds, aes(carat)) +
 ```{r}
 ggplot(faithful, aes(x = eruptions, y = waiting)) +
   geom_point() +
-  geom_density_2d_filled(alpha = 0.5) +
-  theme_trace()
+  geom_density_2d_filled(alpha = 0.5)
 ```
 
 ```{r}
 ggplot(diamonds, aes(x, y)) +
-  geom_bin_2d() +
-  theme_trace()
+  geom_bin_2d()
 ```
 
 ## Networks
