@@ -11,13 +11,15 @@ License: MIT + file LICENSE
 Depends: 
     R (>= 3.6.0)
 Imports: 
-    ggplot2
+    ggplot2,
+    sysfonts
 Suggests: 
     ggraph,
     knitr,
     maps,
     rmarkdown,
     sf,
+    showtext,
     spelling,
     testthat (>= 3.0.0),
     tidygraph
