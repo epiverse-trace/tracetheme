@@ -4,11 +4,9 @@ theme_custom <- function(...) {
 
   # https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html
 
-  custom_grey <- "#505B5B"
-  green_grey <- "#5E7E80"
 
   theme_grey(...) %+replace%
-    theme()
+    theme(text = element_text(family = "DM Sans"))
 
 }
 

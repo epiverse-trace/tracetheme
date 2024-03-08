@@ -12,8 +12,10 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.height = tracetheme::vignette_dim$vig_height,
-  fig.width = tracetheme::vignette_dim$vig_width
+  fig.width = tracetheme::vignette_dim$vig_width,
+  fig.showtext = TRUE
 )
+showtext::showtext_opts(dpi = 120)
 ```
 
 ```{r setup}
