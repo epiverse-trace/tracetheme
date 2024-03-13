@@ -30,7 +30,14 @@ The examples below are taken from [ggplot2 documentation](https://ggplot2.tidyve
 
 ```{r}
 ggplot(economics, aes(date, unemploy)) +
-  geom_line()
+  geom_line() +
+  labs(
+    title = "Unemployment over time",
+    subtitle = "From July 1967 to April 2015",
+    caption = "Data source: https://fred.stlouisfed.org/",
+    x = "Date",
+    y = "Unemployment"
+  )
 ```
 
 ## Scatter plots
