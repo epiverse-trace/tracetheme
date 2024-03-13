@@ -1,11 +1,11 @@
 #' @importFrom ggplot2 %+replace%
-#' @importFrom ggplot2 theme theme_grey element_rect element_text element_line
+#' @importFrom ggplot2 theme theme_bw element_rect element_text
 theme_custom <- function(...) {
 
   # https://ggplot2.tidyverse.org/articles/ggplot2-in-packages.html
 
 
-  theme_grey(...) %+replace%
+  theme_bw(...) %+replace%
     theme(text = element_text(family = "DM Sans"))
 
 }
