@@ -73,7 +73,11 @@ ggplot(crimes_long, aes(map_id = state)) +
     crs = 5070, default_crs = 4326,
     xlim = c(-125, -70), ylim = c(25, 52)
   ) +
-  facet_wrap(~variable)
+  facet_wrap(~variable) +
+  labs(
+    # multi-line title
+    title = "Number of arrests in the United States\ndisaggregated by reason"
+  )
 ```
 
 ## Distribution plots (parametric and non-parametric) 
