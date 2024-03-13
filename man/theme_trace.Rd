@@ -14,6 +14,7 @@ A custom \pkg{ggplot2} theme for Epiverse-TRACE packages and projects
 }
 \examples{
 library(ggplot2)
+showtext::showtext_auto()
 
 ggplot(mtcars, aes(wt, mpg)) +
   geom_point() +
