@@ -11,7 +11,9 @@ License: MIT + file LICENSE
 Depends: 
     R (>= 3.6.0)
 Imports: 
+    curl,
     ggplot2,
+    jsonlite,
     sysfonts
 Suggests: 
     ggraph,
