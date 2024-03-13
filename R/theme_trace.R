@@ -11,7 +11,8 @@ theme_custom <- function(...) {
       plot.title = element_text(
         hjust = 0.5, face = "bold", size = rel(1.7), margin = margin(b = rel(5))
       ),
-      plot.caption = element_text(hjust = 1, face = "italic")
+      plot.caption = element_text(hjust = 1, face = "italic"),
+      validate = FALSE
     )
 
 }
