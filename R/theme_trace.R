@@ -23,6 +23,7 @@ theme_custom <- function(...) {
 #'
 #' @examples
 #' library(ggplot2)
+#' showtext::showtext_auto()
 #'
 #' ggplot(mtcars, aes(wt, mpg)) +
 #'   geom_point() +
