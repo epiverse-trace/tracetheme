@@ -4,7 +4,7 @@ Version: 0.0.1
 Authors@R: c(
     person("Hugo Gruson", , , "hugo@data.org", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-4094-1476")),
-    person("The Epiverse-TRACE team", role = "aut")
+    person("The Epiverse-TRACE team", role = c("aut", "cph"))
   )
 Description: A 'ggplot2' theme and scale using 'Epiverse-TRACE' visual style, 
     colour scheme, and visualisation guidelines.
