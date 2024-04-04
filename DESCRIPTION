@@ -2,8 +2,9 @@ Package: tracetheme
 Title: A 'ggplot2' Theme and Scale Using 'Epiverse-TRACE' Visual Style
 Version: 0.0.1
 Authors@R: c(
-    person("The Epiverse-TRACE team", , , "hugo@data.org", role = c("aut", "cre"),
-           comment = c(ORCID = "https://orcid.org/0000-0002-4094-1476"))
+    person("Hugo Gruson", , , "hugo@data.org", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0002-4094-1476")),
+    person("The Epiverse-TRACE team", role = "aut")
   )
 Description: A 'ggplot2' theme and scale using 'Epiverse-TRACE' visual style, 
     colour scheme, and visualisation guidelines.
