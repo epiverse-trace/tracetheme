@@ -33,7 +33,7 @@ This package should work with plots provided by:
 
 ### Alignment with Epiverse-TRACE web theme
 
-Epiverse-TRACE already has a clear visual identity for its web resources, via the [pkgdown custom theme](https://epiverse-trace.github.io/epiversetheme), the [varnish fork to customize the look of online training materials](https://epiverse-trace.github.io/varnish), and the [custom theme for the quarto website](https://github.com/epiverse-trace/epiverse-trace.github.io/blob/0d70e09531c422648e0a1d46f7ca64c45def78a2/custom.scss).
+Epiverse-TRACE already has a clear visual identity for its web resources, via the [pkgdown custom theme](https://epiverse-trace.github.io/epiversetheme/), the [varnish fork to customize the look of online training materials](https://github.com/epiverse-trace/varnish), and the [custom theme for the quarto website](https://github.com/epiverse-trace/epiverse-trace.github.io/blob/0d70e09531c422648e0a1d46f7ca64c45def78a2/custom.scss).
 
 The custom ggplot2 theme and scale provided here should roughly align with this existing visual identity.
 
@@ -47,7 +47,7 @@ In practice, this means:
   - [Aqua](https://color-hex.org/color/10bed2)
   - [Olive](https://color-hex.org/color/aec800)
   - [Lime](https://color-hex.org/color/deff00)
-  - [Cool Gray](https://color-hex.org/color/88888)
+  - [Cool Gray](https://color-hex.org/color/888888)
   - [Warm Gray](https://color-hex.org/color/ebe6e0)
 
 ### Accessibility requirements

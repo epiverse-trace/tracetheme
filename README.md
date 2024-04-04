@@ -10,7 +10,7 @@
 <!-- badges: start -->
 
 [![License:
-MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/)
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit)
 [![R-CMD-check](https://github.com/epiverse-trace/tracetheme/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/epiverse-trace/tracetheme/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/epiverse-trace/tracetheme/branch/main/graph/badge.svg)](https://app.codecov.io/gh/epiverse-trace/tracetheme?branch=main)
