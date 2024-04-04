@@ -9,15 +9,18 @@ type: software
 license: MIT
 title: 'tracetheme: A ''ggplot2'' Theme and Scale Using ''Epiverse-TRACE'' Visual
   Style'
-version: 0.0.1
+version: 0.1.0.9000
 abstract: A 'ggplot2' theme and scale using 'Epiverse-TRACE' visual style, colour
   scheme, and visualisation guidelines.
 authors:
-- name: The Epiverse-TRACE team
+- name: Hugo Gruson
   email: hugo@data.org
   orcid: https://orcid.org/0000-0002-4094-1476
-contact:
 - name: The Epiverse-TRACE team
+repository-code: https://github.com/epiverse-trace/tracetheme
+url: https://github.com/epiverse-trace/tracetheme
+contact:
+- name: Hugo Gruson
   email: hugo@data.org
   orcid: https://orcid.org/0000-0002-4094-1476
 references:
