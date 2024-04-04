@@ -37,3 +37,5 @@ Language: en-GB
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 LazyData: true
+URL: https://github.com/epiverse-trace/tracetheme
+BugReports: https://github.com/epiverse-trace/tracetheme/issues
