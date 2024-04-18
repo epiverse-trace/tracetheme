@@ -4,10 +4,12 @@ Epiverse
 Gruson
 Heatmaps
 ORCID
+alt
 codecov
 colorspace
 colourblind
 com
+geoms
 ggplot
 ggraph
 gh
@@ -15,6 +17,9 @@ github
 io
 lifecycle
 packagename
+packagetemplate
 pkgdown
+slideshows
+subfigures
 svg
 yaml
