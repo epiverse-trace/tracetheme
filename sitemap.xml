@@ -1,45 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/404.html</loc>
   </url>
   <url>
-    <loc>/LICENSE-text.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/articles/demo.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/articles/demo.html</loc>
   </url>
   <url>
-    <loc>/articles/design-principles.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/articles/design-principles.html</loc>
   </url>
   <url>
-    <loc>/articles/index.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/articles/guidelines.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/articles/index.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/authors.html</loc>
   </url>
   <url>
-    <loc>/news/index.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/index.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/news/index.html</loc>
   </url>
   <url>
-    <loc>/reference/slide_dim.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/theme_trace.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/reference/slide_dim.html</loc>
   </url>
   <url>
-    <loc>/reference/tracetheme-package.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/reference/theme_trace.html</loc>
   </url>
   <url>
-    <loc>/reference/vignette_dim.html</loc>
+    <loc>https://epiverse-trace.github.io/tracetheme/reference/tracetheme-package.html</loc>
+  </url>
+  <url>
+    <loc>https://epiverse-trace.github.io/tracetheme/reference/vignette_dim.html</loc>
   </url>
 </urlset>
